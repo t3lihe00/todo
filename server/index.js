@@ -37,7 +37,7 @@ app.listen(port, () => {
     console.log(`Server is running on http://localhost:${port}`)
 })
 
-('/create', (req, res) => {
+app.post('/create', (req, res) => {
     const pool = openDb()
     const { task } = req.body
 
